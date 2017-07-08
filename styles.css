@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 640px;
+  margin: 0 auto 0 auto;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#game-canvas {
+  height: 484px;
+  width: 484px;
+  border: 1px solid gray;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "landrun",
+  "version": "0.0.1",
+  "description": "LANDRUN is a game where the goal is to claim as much area of the game board as possible.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneNeptune/landrun.git"
+  },
+  "dependencies": {
+    "webpack": "^3.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneNeptune/landrun/issues"
+  },
+  "homepage": "https://github.com/OneNeptune/landrun#readme"
+}
