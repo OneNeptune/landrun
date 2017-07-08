@@ -1,6 +1,4 @@
 node_modules/
 .DS_Store
 .byebug_history
-landrun_bundle.js
-landrun_bundle.js.map
 problem.md
