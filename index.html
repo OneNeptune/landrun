@@ -3,18 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>LANDRUN.space</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
     <script src="lib/landrun_bundle.js"></script>
   </head>
   <body>
-    <div class='content-wrapper'>
+    <section class='content-wrapper'>
       <header class='logo-header'>
         <img src='assets/images/LANDRUNlogo.png' />
       </header>
       <canvas id='game-canvas'></canvas>
+
+      <div id='start-menu' class='game-modal'>
+        <section class='modal-content'>
+          <h2>Menu</h2>
+
+          <ul class='menu'>
+            <button class='how-to-play'>
+              How To Play
+            </button>
+            <button class='controls'>
+              Controls
+            </button>
+            <button class='new-game'>
+              New Game
+            </button>
+          </ul>
+        </section>
+      </div>
+
+      <div id='how-to-play' class='game-modal'>
+        <button class='start-menu'>< Main Menu</button>
+        <section class='modal-content'>
+          <h2>How To Play</h2>
+
+          <ul class='menu'>
+
+          </ul>
+        </section>
+      </div>
+
+      <div id='controls' class='game-modal'>
+        <button class='start-menu'>< Main Menu</button>
+        <section class='modal-content'>
+          <h2>Controls</h2>
+
+          <ul class='menu'>
+
+          </ul>
+        </section>
+      </div>
+
+      <div id='new-game' class='game-modal-open'>
+        <button class='start-menu'>< Main Menu</button>
+        <section class='modal-content'>
+          <h2>New Game</h2>
+
+          <ul class='menu'>
+            <input maxlength='13' class='playerName' placeholder="Player 1"></input>
+            <li id='start-game'>
+              Start!
+            </li>
+          </ul>
+        </section>
+      </div>
+
       <footer>
       </footer>
-    </div>
+    </section>
   </body>
 </html>

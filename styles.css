@@ -23,3 +23,140 @@ body {
   width: 484px;
   border: 1px solid gray;
 }
+
+div.game-modal {
+  display: none;
+}
+
+div.game-modal-open {
+  display: flex;
+  position: relative;
+  margin-top: -485px;
+  height: 484px;
+  width: 484px;
+  z-index: 9001;
+  background-color: rgba(0,0,0,0.8);
+}
+
+div > button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 150px;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 22px;
+  font-size: 10px;
+  background: #FECC30;
+  border: 1px solid #BF6919;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 484px;
+  width: 484px;
+}
+
+.modal-content h2 {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+}
+
+ul.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu button {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 200px;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 44px;
+  font-size: 14px;
+  background: #FECC30;
+  border: 1px solid #BF6919;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.menu li:hover {
+  background: #FD9027;
+  text-decoration: none;
+}
+
+.menu li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 200px;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 44px;
+  font-size: 14px;
+  background: #FECC30;
+  border: 1px solid #BF6919;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.menu button:hover {
+  background: #FD9027;
+  text-decoration: none;
+}
+
+input {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  background: lightgray;
+  display: block;
+  box-sizing: border-box;
+  width: 250px;
+  padding: 12px 16px;
+  border: 1px solid #d3d6dc;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 34px;
+  height: 44px;
+  color: #333;
+}
