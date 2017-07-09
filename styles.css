@@ -31,7 +31,7 @@ body {
 }
 
 .header-links a {
-  color: black;
+  color: #333;
   text-decoration: none;
   margin-bottom: 10px;
   display: flex;
@@ -40,6 +40,11 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
 }
+
+.header-links a:hover {
+  color: #674EA7;
+}
+
 
 .header-links i {
   font-size: 36px;
