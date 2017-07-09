@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>LANDRUN.space</title>
+    <script src="https://use.fontawesome.com/0120d41d2d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
@@ -12,10 +14,30 @@
     <section class='content-wrapper'>
       <header class='logo-header'>
         <img src='assets/images/LANDRUNlogo.png' />
+        <ul class='header-links'>
+          <li>
+            <a href='https://www.linkedin.com/in/oneneptune/' target='_blank'>
+              <i class="fa fa-linkedin-square fa-4" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href='https://github.com/OneNeptune' target='_blank'>
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href='https://www.michaelbennett.nyc' target='_blank'>
+              <i class="fa fa-home" aria-hidden="true"></i>
+              Home
+            </a>
+          </li>
+        </ul>
       </header>
       <canvas id='game-canvas'></canvas>
 
-      <div id='start-menu' class='game-modal'>
+      <div id='start-menu' class='game-modal-open'>
         <section class='modal-content'>
           <h2>Menu</h2>
 
@@ -37,10 +59,7 @@
         <button class='start-menu'>< Main Menu</button>
         <section class='modal-content'>
           <h2>How To Play</h2>
-
-          <ul class='menu'>
-
-          </ul>
+          <img src='assets/images/instructions.gif' width='340'/>
         </section>
       </div>
 
@@ -48,28 +67,55 @@
         <button class='start-menu'>< Main Menu</button>
         <section class='modal-content'>
           <h2>Controls</h2>
-
-          <ul class='menu'>
-
-          </ul>
+          <br><br>
+          <img width='229.5' src='assets/images/controls.png'/>
         </section>
       </div>
 
-      <div id='new-game' class='game-modal-open'>
+      <div id='new-game' class='game-modal'>
         <button class='start-menu'>< Main Menu</button>
         <section class='modal-content'>
           <h2>New Game</h2>
 
           <ul class='menu'>
             <input maxlength='13' class='playerName' placeholder="Player 1"></input>
-            <li id='start-game'>
+            <li class='start-game'>
               Start!
             </li>
           </ul>
         </section>
       </div>
 
+      <div id='won' class='game-modal'>
+        <section class='modal-content'>
+          <section class='game-over'>
+            <h2>Congratulations,</h2>
+            <h3 id='nameDisplay'></h3>
+              <h2>YOU WIN!</h2>
+          </section>
+          <ul class='menu'>
+            <li class='start-game'>
+              New Game!
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div id='loss' class='game-modal'>
+        <section class='modal-content'>
+          <section class='game-over'>
+              <h2>GAME OVER</h2>
+          </section>
+          <ul class='menu'>
+            <li class='start-game'>
+              Try Again!
+            </li>
+          </ul>
+        </section>
+      </div>
+
       <footer>
+        <img src='assets/images/controls.png'/>
       </footer>
     </section>
   </body>
