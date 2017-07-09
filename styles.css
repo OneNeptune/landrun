@@ -121,6 +121,7 @@ div > button {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  margin-left: 10px;
 }
 
 .game-over h2, h3 {
