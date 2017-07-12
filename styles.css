@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: lightgray;
+  /*background: lightgray;*/
+  background-image: url('assets/images/bg.png');
 }
 .tips {
   font-family: 'VT323', monospace;
@@ -10,7 +11,7 @@ body {
   position: absolute;
   color: #674EA7;
   top: 196px;
-  margin-left: -362px;
+  margin-left: -462px;
   width: 242px;
   height: 484px;
 }
@@ -98,7 +99,7 @@ body {
 
 #game-canvas {
   height: 484px;
-  width: 484px;
+  width: 684px;
   border: 1px solid gray;
 }
 
@@ -111,7 +112,7 @@ div.game-modal-open {
   position: relative;
   margin-top: -485px;
   height: 484px;
-  width: 484px;
+  width: 684px;
   z-index: 9001;
   background-color: rgba(0,0,0,0.8);
 }
@@ -148,7 +149,7 @@ div > button {
   padding: 20px;
   box-sizing: border-box;
   height: 484px;
-  width: 484px;
+  width: 684px;
 }
 
 .modal-content h2 {
