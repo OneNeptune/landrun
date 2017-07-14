@@ -242,7 +242,7 @@ ul.menu {
 }
 
 input {
-  text-align: center;
+  text-align: left;
   font-family: 'Press Start 2P', cursive;
   background: lightgray;
   display: block;
